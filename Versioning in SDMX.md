@@ -11,11 +11,11 @@ In the world of data modelling there exists a dreaded place called “dependency
 
 In systems with many dependencies, releasing new artefact versions can quickly become a nightmare. If the dependency specifications are too tight, you are in danger of version lock (the inability to upgrade a artefact without having to release new versions of every dependent artefact). If dependencies are specified too loosely, you will inevitably be bitten by version promiscuity (assuming compatibility with more future versions than is reasonable). Dependency hell is where you are when version lock and/or version promiscuity prevent you from easily and safely moving your data modelling forward.
 
-As a very successful solution to the similar problem in software development, “Semantic Versioning" [semver.org](https://semver.org/) proposes a simple set of rules and requirements that dictate how version numbers are assigned and incremented. These rules make also perfect sense in the world of data modelling, and help to solve the “dependency hell” encountered with previous versions of SDMX. SDMX 3.0 and above applies thus the Semantic Versioning rules on all SDMX artefacts. Once you release an SDMX artefact, you communicate changes to it with specific increments to your version number. Consider a version format of X.Y.Z (Major.Minor.Patch). Property changes not affecting the artefact compatibility increment the patch version, backwards compatible artefact element additions/changes increment the minor version, and backwards incompatible artefact changes increment the major version.
+As a very successful solution to the similar problem in software development, “Semantic Versioning" [semver.org](https://semver.org/) proposes a simple set of rules and requirements that dictate how version numbers are assigned and incremented. These rules make also perfect sense in the world of data modelling, and help to solve the “dependency hell” encountered with previous versions of SDMX. SDMX 3.1 and above applies thus the Semantic Versioning rules on all SDMX artefacts. Once you release an SDMX artefact, you communicate changes to it with specific increments to your version number. Consider a version format of X.Y.Z (Major.Minor.Patch). Property changes not affecting the artefact compatibility increment the patch version, backwards compatible artefact element additions/changes increment the minor version, and backwards incompatible artefact changes increment the major version.
 
-**This SDMX 3.0 specification inherits the original [semver.org](https://semver.org/) 2.0.0 wording (license: [Creative Commons - CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)) and applies it to SDMX artefacts.** Under this scheme, version numbers and the way they change convey meaning about the underlying data structures and what has been modified from one version to the next.
+**This SDMX 3.1 specification inherits the original [semver.org](https://semver.org/) 2.0.0 wording (license: [Creative Commons - CC BY 3.0](http://creativecommons.org/licenses/by/3.0/)) and applies it to SDMX artefacts.** Under this scheme, version numbers and the way they change convey meaning about the underlying data structures and what has been modified from one version to the next.
 
-## SDMX 3.0 Semantic Versioning Specification
+## SDMX 3.1 Semantic Versioning Specification
 
 The key words “MUST”, “MUST NOT”, “REQUIRED”, “SHALL”, “SHALL NOT”, “SHOULD”, “SHOULD NOT”, “RECOMMENDED”, “MAY”, and “OPTIONAL” in this document are to be interpreted as described in [RFC 2119](http://tools.ietf.org/html/rfc2119).
 
@@ -64,7 +64,7 @@ This strategy ensures that the semantic versioned artefacts actually follows the
 
 If an artefact following 2-digt versioning with "isFinal=false" needs to be migrated then a version extension should be added. For example, version 1.3 with isFinal=false becomes version 1.3.0-draft.
 
-### Backus–Naur Form Grammar for Valid SDMX 3.0 Semantic Versions
+### Backus–Naur Form Grammar for Valid SDMX 3.1 Semantic Versions
 
 ```bnf
 <valid semver> ::= <version core>
@@ -144,16 +144,16 @@ SDMX Semantic Versioning doesn't and cannot control such things. SDMX Semantic V
 That would be considered compatible since it does not affect the public artefact. Artefacts that explicitly depend on the same dependencies as your artefact should have their own dependency specifications and the author will notice any conflicts. Determining whether the change is a patch level or minor level modification depends on whether you updated your dependencies in order to change a property or introduce new backwards compatible items. For the latter instance, one would obviously expect a minor level increment.
 
 **What if I inadvertently alter the public artefact in a way that is not compliant with the version number change (i.e. the modification incorrectly introduces a major breaking change in a patch release)?**  
-Use your best judgement. If you have a huge audience that will be drastically impacted by changing the behaviour back to what the public artefact intended, then it may be best to perform a major version release, even though the property change could strictly be considered a patch release. Remember, SDMX 3.0 Semantic Versioning is all about conveying meaning by how the version number changes. If these changes are important to your users, use the version number to inform them.
+Use your best judgement. If you have a huge audience that will be drastically impacted by changing the behaviour back to what the public artefact intended, then it may be best to perform a major version release, even though the property change could strictly be considered a patch release. Remember, SDMX 3.1 Semantic Versioning is all about conveying meaning by how the version number changes. If these changes are important to your users, use the version number to inform them.
 
 **How should I handle deprecating elements?**  
 Deprecating existing elements is a normal part of data modelling and is often required to make forward progress or follow history (changing classifications, evolving reference areas). When you deprecate part of your public artefact, you should  issue a new minor release with the deprecation in place. Before you completely remove the functionality in a new major release there should be at least one minor release that contains the deprecation so that users can smoothly transition to the new artefact.
 
-**Does SDMX 3.0 Semantic Versioning have a size limit on the version string?**  
+**Does SDMX 3.1 Semantic Versioning have a size limit on the version string?**  
 No, but use good judgement. A 255 character version string is probably overkill, for example. Also, specific SDMX implementations may impose their own limits on the size of the string. Remember, it is generally recommended to use the standard extension "-draft".  
 
 **Is “v1.2.3” a semantic version?**  
 No, “v1.2.3” is not a semantic version. The semantic version is “1.2.3”.
 
-**Is there a suggested regular expression (RegEx) to check an SDMX 3.0 Semantic Versioning string?**  
+**Is there a suggested regular expression (RegEx) to check an SDMX 3.1 Semantic Versioning string?**  
 Please check the SDMX-ML and SDMX-JSON schemas.

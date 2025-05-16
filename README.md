@@ -13,6 +13,15 @@ This document is broken down into the following sections:
 * [General Recommendations for Maintainable Artefacts](./General%20Recommendations%20for%20Maintainable%20Artefacts.md),  which details actions applicable to any maintainable artefact and how those actions impact versioning.
 * [Artefact Specific Recommendations](./Artefact%20Specific%20Recommendations/),  which detail how each action made to a maintainable artefact can impact it's version and what wildcarding considerations should be considered within that artefact.
 
+## Changes since SDMX 3.0 guidance
+
+The following sections have been update based on changes to the SDMX standard
+[Categorisation](./Artefact%20Specific%20Recommendations/Artefacts%20with%20Fixed%20Versions/Categorisation.md)
+[DataConstraint](./Artefact%20Specific%20Recommendations/DataConstraint.md)
+[Dataflow](./Artefact%20Specific%20Recommendations/Dataflow.md)
+[DataStructureDefination](./Artefact%20Specific%20Recommendations/DataStructure.md)
+[MetadataConstraint](./Artefact%20Specific%20Recommendations/MetadataConstraint.md)
+
 ## Conventions Used in These Guidelines
 
 ### Minimum Version Changes

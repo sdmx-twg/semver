@@ -18,7 +18,9 @@ Including both Dimensions and TimeDimension
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Add a Dimension or TimeDimension | Major | This would break existing queries to the dataflow using a key. |
+| Switch evolvingStructure from True to False | Minor | Existing Dataflows can continue to use the DataStructure, this is just a strengthening of versioning rules. A new Dataflow which is wildcarded to this version would not be backward compatible as it is not required to have a DimensionConstraint. |
+| Switch evolvingStructure from False to True | Major | Setting evolvingStructure to true allows adding a dimension, which is otherwise a major change to be a minor change. To protect wildcarded Dataflows from this change in behaviour this must be a major change. |
+| Add a Dimension or TimeDimension | Depends | If EvolvingStructure is set to True then this is a minor change. If EvolvingStructure is set to False then this is a major change. |
 | Remove a Dimension or TimeDimension | Major | This would break existing queries to the dataflow using a key. |
 | Change a Dimension's ID | Major | This refers to modifying the ID in the URN of the dimension. |
 | Modify a Dimension's Position | Major | This would break existing queries to the dataflow using a key. |

@@ -1,9 +1,7 @@
 # DataConstraint
 
-**Note:** The SDMX 3.1 Technical Specifications state:
+**Note:** The SDMX Technical Specifications state:
 >"When Data and Metadata Constraints are versioned, the latest version of the Constraint is used to generate the reporting restriction rules; all previous versions are for historical information only."
-
-That same logic should be applied to SDMX 3.0 and is the basis for the recommendations below.
 
 ## Actions
 
@@ -13,11 +11,6 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 |--------|:--------------:|---------|
 | Add an artefact to a ConstraintAttachment | Patch | |
 | Remove an artefact from a ConstraintAttachment | Patch | |
-| Add a ReleaseCalendar | Major | Adding a ReleaseCalendar results in a more restrictive constraint. |
-| Remove a ReleaseCalendar | Minor | Removing a ReleaseCalendar results in a less restrictive constraint. |
-| Modify a ReleaseCalendar's Periodicity | Depends | See [Note](Note) |
-| Modify a ReleaseCalendar's Offset | Depends | See [Note](Note) |
-| Modify a ReleaseCalendar's Tolerance | Depends | See [Note](Note) |
 | Add DataKeySet | Depends | See [Note](Note) |
 | Remove DataKeySet | Depends | See [Note](Note) |
 | Modify DataKeySet's isIncluded attribute | Depends | See [Note](Note) |
