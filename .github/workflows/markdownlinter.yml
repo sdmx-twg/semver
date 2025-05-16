@@ -8,7 +8,7 @@ jobs:
     steps:
       # Checks-out repository under $GITHUB_WORKSPACE, so job can access it
       - uses: actions/checkout@v4
-      # Runs markdown linter on all markdown files
-      - uses: DavidAnson/markdownlint-cli2-action@v20
         with:
-          globs: '**/*.md'
+          fetch-depth: 0
+      - name: Super-Linter
+        uses: super-linter/super-linter@v7.4.0
