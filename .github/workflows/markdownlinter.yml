@@ -1,6 +1,7 @@
 name: Check Markdown
 # Controls when the workflow will run
 on: [push, pull_request, workflow_dispatch]
+permissions: read-all
 jobs:
   # This workflow contains a single job called "lint"
   lint:
