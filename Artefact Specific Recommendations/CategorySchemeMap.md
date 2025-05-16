@@ -6,8 +6,8 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:----------------------:|---------|
-| Modify Source | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
-| Modify Target | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify Source | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
+| Modify Target | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Add an ItemMap | Patch | |
 | Remove an ItemMap | Patch| |
 | Modify an ItemMap's SourceValue | Patch | |

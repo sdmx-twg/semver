@@ -11,69 +11,69 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 |--------|:--------------:|---------|
 | Add an artefact to a ConstraintAttachment | Patch | |
 | Remove an artefact from a ConstraintAttachment | Patch | |
-| Add DataKeySet | Depends | See [Note](Note) |
-| Remove DataKeySet | Depends | See [Note](Note) |
-| Modify DataKeySet's isIncluded attribute | Depends | See [Note](Note) |
-| Add a Key to DataKeySet | Depends | See [Note](Note) |
-| Remove a Key from DataKeySet | Depends | See [Note](Note) |
-| Add a Component to a DataKeyset's Key | Depends | See [Note](Note) |
-| Remove a Component from a DataKeyset's Key | Depends | See [Note](Note) |
-| Modify Modify DataKeyset's Key's Component's id | Depends | See [Note](Note) |
-| Modify Modify DataKeyset's Key's Component's include attribute | Depends | See [Note](Note) |
-| Modify Modify DataKeyset's Key's Component's removePrefix attribute | Depends | See [Note](Note) |
-| Modify Modify DataKeyset's Key's Component's Value's cascadeValues attribute | Depends | See [Note](Note) |
-| Modify Modify DataKeyset's Key's Component's Value's xml:lang attribute | Depends | See [Note](Note) |
+| Add DataKeySet | Depends | See [Note](#note) |
+| Remove DataKeySet | Depends | See [Note](#note) |
+| Modify DataKeySet's isIncluded attribute | Depends | See [Note](#note) |
+| Add a Key to DataKeySet | Depends | See [Note](#note) |
+| Remove a Key from DataKeySet | Depends | See [Note](#note) |
+| Add a Component to a DataKeyset's Key | Depends | See [Note](#note) |
+| Remove a Component from a DataKeyset's Key | Depends | See [Note](#note) |
+| Modify Modify DataKeyset's Key's Component's id | Depends | See [Note](#note) |
+| Modify Modify DataKeyset's Key's Component's include attribute | Depends | See [Note](#note) |
+| Modify Modify DataKeyset's Key's Component's removePrefix attribute | Depends | See [Note](#note) |
+| Modify Modify DataKeyset's Key's Component's Value's cascadeValues attribute | Depends | See [Note](#note) |
+| Modify Modify DataKeyset's Key's Component's Value's xml:lang attribute | Depends | See [Note](#note) |
 | Modify Modify DataKeyset's Key's Component's TimeRange | Depends | See [TimeRange Related Actions](#timerange-related-actions) |
-| Switch Modify DataKeyset's Key's Component from using TimeRange to Value | Depends | See [Note](Note) |
-| Switch Modify DataKeyset's Key's Component from using Value to TimeRange | Depends | See [Note](Note) |
-| Add a Keyvalue to a DataKeyset's Key | Depends | See [Note](Note) |
-| Remove a Keyvalue from a DataKeyset's Key | Depends | See [Note](Note) |
-| Modify DataKeyset's Key's Keyvalue's id | Depends | See [Note](Note) |
-| Modify DataKeyset's Key's Keyvalue's value | Depends | See [Note](Note) |
-| Add a CubeRegion | Depends | See [Note](Note) |
-| Remove a CubeRegion | Depends | See [Note](Note) |
-| Modify a CubeRegion's include attribute | Depends | See [Note](Note) |
-| Add a KeyValue to a CubeRegion | Depends | See [Note](Note) |
-| Remove a KeyValue from a CubeRegion | Depends | See [Note](Note) |
-| Modify a KeyValue's id | Depends | See [Note](Note) |
-| Modify a KeyValue's include attribute | Depends | See [Note](Note) |
-| Modify a KeyValue's removePrefix attribute | Depends | See [Note](Note) |
-| Modify a KeyValue's validFrom | Depends | See [Note](Note) |
-| Modify a KeyValue's validTo | Depends | See [Note](Note) |
-| Modify KeyValue's Value's cascadeValues attribute | Depends | See [Note](Note) |
-| Modify KeyValue's Value's xml:lang attribute | Depends | See [Note](Note) |
-| Modify KeyValue's Value's validFrom | Depends | See [Note](Note) |
-| Modify KeyValue's Value's validTo | Depends | See [Note](Note) |
+| Switch Modify DataKeyset's Key's Component from using TimeRange to Value | Depends | See [Note](#note) |
+| Switch Modify DataKeyset's Key's Component from using Value to TimeRange | Depends | See [Note](#note) |
+| Add a Keyvalue to a DataKeyset's Key | Depends | See [Note](#note) |
+| Remove a Keyvalue from a DataKeyset's Key | Depends | See [Note](#note) |
+| Modify DataKeyset's Key's Keyvalue's id | Depends | See [Note](#note) |
+| Modify DataKeyset's Key's Keyvalue's value | Depends | See [Note](#note) |
+| Add a CubeRegion | Depends | See [Note](#note) |
+| Remove a CubeRegion | Depends | See [Note](#note) |
+| Modify a CubeRegion's include attribute | Depends | See [Note](#note) |
+| Add a KeyValue to a CubeRegion | Depends | See [Note](#note) |
+| Remove a KeyValue from a CubeRegion | Depends | See [Note](#note) |
+| Modify a KeyValue's id | Depends | See [Note](#note) |
+| Modify a KeyValue's include attribute | Depends | See [Note](#note) |
+| Modify a KeyValue's removePrefix attribute | Depends | See [Note](#note) |
+| Modify a KeyValue's validFrom | Depends | See [Note](#note) |
+| Modify a KeyValue's validTo | Depends | See [Note](#note) |
+| Modify KeyValue's Value's cascadeValues attribute | Depends | See [Note](#note) |
+| Modify KeyValue's Value's xml:lang attribute | Depends | See [Note](#note) |
+| Modify KeyValue's Value's validFrom | Depends | See [Note](#note) |
+| Modify KeyValue's Value's validTo | Depends | See [Note](#note) |
 | Modify KeyValue's TimeRange | Depends | See [TimeRange Related Actions](#timerange-related-actions) |
-| Switch KeyValue from using TimeRange to Value | Depends | See [Note](Note) |
-| Switch KeyValue from using Value to TimeRange | Depends | See [Note](Note) |
-| Add Component to CubeRegion | Depends | See [Note](Note) |
-| Remove Component from CubeRegion | Depends | See [Note](Note) |
-| Modify Component's id | Depends | See [Note](Note) |
-| Modify Component's include attribute | Depends | See [Note](Note) |
-| Modify Component's removePrefix attribute | Depends | See [Note](Note) |
-| Modify Component's Value's cascadeValues attribute | Depends | See [Note](Note) |
-| Modify Component's Value's xml:lang attribute | Depends | See [Note](Note) |
-| Modify Component's Value's validFrom | Depends | See [Note](Note) |
-| Modify Component's Value's validTo | Depends | See [Note](Note) |
+| Switch KeyValue from using TimeRange to Value | Depends | See [Note](#note) |
+| Switch KeyValue from using Value to TimeRange | Depends | See [Note](#note) |
+| Add Component to CubeRegion | Depends | See [Note](#note) |
+| Remove Component from CubeRegion | Depends | See [Note](#note) |
+| Modify Component's id | Depends | See [Note](#note) |
+| Modify Component's include attribute | Depends | See [Note](#note) |
+| Modify Component's removePrefix attribute | Depends | See [Note](#note) |
+| Modify Component's Value's cascadeValues attribute | Depends | See [Note](#note) |
+| Modify Component's Value's xml:lang attribute | Depends | See [Note](#note) |
+| Modify Component's Value's validFrom | Depends | See [Note](#note) |
+| Modify Component's Value's validTo | Depends | See [Note](#note) |
 | Modify Component's TimeRange | Depends | See [TimeRange Related Actions](#timerange-related-actions) |
-| Switch Component from using TimeRange to Value | Depends | See [Note](Note) |
-| Switch Component from using Value to TimeRange | Depends | See [Note](Note) |
+| Switch Component from using TimeRange to Value | Depends | See [Note](#note) |
+| Switch Component from using Value to TimeRange | Depends | See [Note](#note) |
 
 ### TimeRange Related Actions
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Modify BeforePeriod | Depends | See [Note](Note) |
-| Modify AfterPeriod | Depends | See [Note](Note) |
-| Modify StartPeriod | Depends | See [Note](Note) |
-| Modify EndPeriod | Depends | See [Note](Note) |
-| Modify validFrom | Depends | See [Note](Note) |
-| Modify validTo | Depends | See [Note](Note) |
-| Switch from using BeforePeriod or AfterPeriod to StartPeriod and EndPeriod | Depends | See [Note](Note) |
-| Switch from using StartPeriod and EndPeriod to BeforePeriod or AfterPeriod | Depends | See [Note](Note) |
-| Switch from using BeforePeriod to AfterPeriod | Depends | See [Note](Note) |
-| Switch from using AfterPeriod to BeforePeriod | Depends | See [Note](Note) |
+| Modify BeforePeriod | Depends | See [Note](#note) |
+| Modify AfterPeriod | Depends | See [Note](#note) |
+| Modify StartPeriod | Depends | See [Note](#note) |
+| Modify EndPeriod | Depends | See [Note](#note) |
+| Modify validFrom | Depends | See [Note](#note) |
+| Modify validTo | Depends | See [Note](#note) |
+| Switch from using BeforePeriod or AfterPeriod to StartPeriod and EndPeriod | Depends | See [Note](#note) |
+| Switch from using StartPeriod and EndPeriod to BeforePeriod or AfterPeriod | Depends | See [Note](#note) |
+| Switch from using BeforePeriod to AfterPeriod | Depends | See [Note](#note) |
+| Switch from using AfterPeriod to BeforePeriod | Depends | See [Note](#note) |
 
 ### Note
 

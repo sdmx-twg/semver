@@ -6,7 +6,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Add a DimensionConstraint | Depends | This should be a major change if the Dimensions listed in the DimensionConstraint is a proper subset of the Dimensions of the Structure. If the Dimensions listed in the DimensionConstraint equals the Dimensions of the Structure, then this is a patch. |
 | Remove a DimensionConstraint | Depends | This should be a major change if the Dimensions listed in the DimensionConstraint is a proper subset of the Dimensions of the Structure. If the Dimensions listed in the DimensionConstraint equals the Dimensions of the Structure, then this is a patch. |
 | Add a Dimension to a DimensionConstraint | Major | The dimensionality of the Dataflow is changing, which changes the validity of the data associated with the Dataflow. |

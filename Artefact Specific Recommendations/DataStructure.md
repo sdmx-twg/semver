@@ -24,7 +24,7 @@ Including both Dimensions and TimeDimension
 | Remove a Dimension or TimeDimension | Major | This would break existing queries to the dataflow using a key. |
 | Change a Dimension's ID | Major | This refers to modifying the ID in the URN of the dimension. |
 | Modify a Dimension's Position | Major | This would break existing queries to the dataflow using a key. |
-| Modify Dimension or TimeDimension's ConceptIdentity | Depends | If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify Dimension or TimeDimension's ConceptIdentity | Depends | If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | LocalRepresentation-related actions | Depends | See [LocalRepresentation-related actions](#localrepresentation-related-actions) for listing of actions and impacts. |
 | ConceptRole-related actions | Depends | See [ConceptRole-related actions](#conceptrole-related-actions) for listing of actions and impacts. |
 
@@ -37,7 +37,7 @@ Including both Dimensions and TimeDimension
 | Remove a Measure | Major | This change would remove data from existing datasets. |
 | Modify a Measure's UsageType from optional to mandatory | Major | Datasets based on the old version of the DataStructure may not have data for this measure.|
 | Modify a Measure's UsageType from mandatory to optional | Minor | This change is not backward compatiable as a dataset based on the new DataStructure may no longer populate this measure. |
-| Modify a Measure's ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify a Measure's ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | LocalRepresentation-related actions | Depends | See [LocalRepresentation-related actions](#localrepresentation-related-actions) for listing of actions and impacts. |
 | ConceptRole-related actions | Depends | See [ConceptRole-related actions](#conceptrole-related-actions) for listing of actions and impacts. |
 
@@ -53,7 +53,7 @@ Including both Dimensions and TimeDimension
 | Modify an Attribute's UsageType from mandatory to optional | Minor | This change is not backward compatible as a dataset based on the new DataStructure may no longer populate this Attribute. |
 | Modify an Attribute's AttributeRelationship | Major | This is the attachment level of the Attribute so existing information in this Attribute would no longer be valid. |
 | Modify an Attribute's MeasureRelationship | Major | This would either be adding or removing measures which the Attribute is applicable for, which could change the meaning of the data. |
-| Modify ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | LocalRepresentation-related actions | Depends | See [LocalRepresentation-related actions](#localrepresentation-related-actions) for listing of actions and impacts. |
 | ConceptRole-related actions | Depends | See [ConceptRole-related actions](#conceptrole-related-actions) for listing of actions and impacts. |
 
@@ -62,7 +62,7 @@ Including both Dimensions and TimeDimension
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
 | Add a MetdataStructrue reference | Patch | The action itself doesn't change that structure but subsequent use of MetadataAttributes will result in at least a Minor change. |
-| Modify a MetdataStructrue reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify a MetdataStructrue reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Remove aMetdataStructrue reference where MetadataAttributes are used | Major | Any MetadataAttributes would also be removed when removing the MetadataStructure.  |
 | Remove a MetdataStructrue reference where MetadataAttributes are not used | Patch | There is no impact to data or metadata in a dependent dataset.  |
 | Add an optional MetadataAttribute | Minor | Existing datasets would not be able to add metadata for this MetadataAttribute. Note a MetadataAttribute being optional is defined in the related MetdataStructrue. |
@@ -70,7 +70,7 @@ Including both Dimensions and TimeDimension
 | RemoveMetadataAttribute | Major | This change would remove metadata from existing datasets. |
 | Modify MetadataAttribute's MetadataAttributeReference | Major | This is effectively removing one MetadataAttribute and replacing it with another from the attached MetdataStructrue. |
 | Modify MetadataAttribute's AttributeRelationship | Major | This is the attachment level of the MetadataAttribute so existing metadata in this MetadataAttribute would no longer be valid. |
-| Modify ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify ConceptIdentity | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | LocalRepresentation-related actions | Depends | See [LocalRepresentation-related actions](#localrepresentation-related-actions) for listing of actions and impacts. |
 
 ### Group-related actions
@@ -94,7 +94,7 @@ Dimensions, TimeDimensions, Attributes, MetadataAttributes and Measures all can 
 | Switch a LocalRepresentation from TextFormat to Enumeration | Major | Information which conformed to the TextFormat could no longer be valid against the enumeration. |
 | Switch a LocalRepresentation from Enumeration to TextFormat | Major | Enumerated values would continue to be valid as text but name and description information is lost to the end user. |
 | Modify a LocalRepresentation’s TextFormat | Major | This action changes the values which can be stored in the field. |
-| Modify a LocalRepresentation’s Enumeration reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify a LocalRepresentation’s Enumeration reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Add an EnumerationFormat to a LocalRepresentation | Major | Adding an EnumerationFormat could make values that were valid without an EnumerationFormat no longer valid. |
 | Remove an EnumerationFormat from a LocalRepresentation | Minor | Removing the EnumerationFormat would make the enumeration less restrictive. |
 | Modify a LocalRepresentation’s  EnumerationFormat | Major | It is advised not to perform this action because core representations are to be used across data structures so this sort of fundamental modifications should be done sparingly. |
@@ -107,7 +107,7 @@ Dimensions, Attributes, and Measures all have ConceptRoles. Note that [Guideline
 |--------|:--------------:|---------|
 | Add a ConceptRole | Minor | This action can change how the dataset will be processed or visualized by external tools. |
 | Remove a ConceptRole | Minor | This action can change how the dataset will be processed or visualized by external tools. |
-| Modify ConceptRole reference | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify ConceptRole reference | Depends |  If changing the concept referenced within a ConceptScheme then this will be a major change as the meaning is changing. If changing the references to the ConceptScheme see [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details.  [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 
 ## Wildcarding Considerations
 

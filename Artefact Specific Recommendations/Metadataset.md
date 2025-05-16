@@ -6,8 +6,8 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Change the Metadataflow reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
-| Change the MetadataProvisionAgreement reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Change the Metadataflow reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
+| Change the MetadataProvisionAgreement reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Switch between a Metadataflow reference and a MetadataProvisionAgreement reference | Major | Even if the definitions of the structure are identical, this changes to context of the metadataset and should be treated as a major change. |
 | Add a Target | Patch | |
 | Remove a Target | Patch | |
