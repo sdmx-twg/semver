@@ -1,0 +1,14 @@
+name: Check Markdown
+# Controls when the workflow will run
+on: [push, pull_request, workflow_dispatch]
+jobs:
+  # This workflow contains a single job called "lint"
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out repository under $GITHUB_WORKSPACE, so job can access it
+      - uses: actions/checkout@v4
+      # Runs markdown linter on all markdown files
+      - uses: DavidAnson/markdownlint-cli2-action@v20
+        with:
+          globs: '**/*.md'
