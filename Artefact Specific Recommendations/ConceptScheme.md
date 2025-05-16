@@ -17,7 +17,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Modify a Concept's  Description | Patch | |
 | Modify a Concept's Modify CoreRepresentation from TextFormat to Enumeration | Major | Information which conformed to the text format could no longer be valid aginst the enumeration. |
 | Modify Concept: Modify CoreRepresentation from Enumeration to TextFormat | Major | Enumerated values would continue to be valid as text but name and description information is lost to the end user. |
-| Modify Concept: Modify CoreRepresentation change enumeration codelist reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify Concept: Modify CoreRepresentation change enumeration codelist reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Modify Concept: Modify CoreRepresentation: Add EnumerationFormat | Major | Adding an EnumerationFormat could make values that were valid without an EnumerationFormat no longer valid. |
 | Modify Concept: Modify CoreRepresentation: Remove EnumerationFormat | Minor | Removing the EnumerationFormat would make the enumeration less restrictive. |
 | Modify Concept: Modify CoreRepresentation: Modify EnumerationFormat | Major | It is advised not to perform this action because core representations are to be used across data strucutres so this sort of fundamental modifications should be done sparingly. |

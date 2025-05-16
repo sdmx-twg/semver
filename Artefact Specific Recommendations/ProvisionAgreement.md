@@ -6,7 +6,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:----------------------:|---------|
-| Modify Dataflow reference | Depends |  See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify Dataflow reference | Depends |  See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Modify DataProvider reference | Major | The only modifications allowed are to either change the agency of the DataProviderScheme or to change the data provider. Either of these changes fundamentally alters the ProvisionAgreement. |
 
 ## Wildcarding Considerations

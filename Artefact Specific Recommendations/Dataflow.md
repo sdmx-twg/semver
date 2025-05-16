@@ -6,7 +6,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 
 ## Wildcarding Considerations
 

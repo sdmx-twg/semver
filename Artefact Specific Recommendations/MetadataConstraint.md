@@ -15,35 +15,35 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Remove an artefact from a ConstraintAttachment | Patch | |
 | Add a ReleaseCalendar | Major | Adding a ReleaseCalendar results in a more restrictive constraint. |
 | Remove a ReleaseCalendar | Minor | Removing a ReleaseCalendar results in a less restrictive constraint. |
-| Modify a ReleaseCalendar's Periodicity | Depends | See [Note](Note) |
-| Modify a ReleaseCalendar's Offset | Depends | See [Note](Note) |
-| Modify a ReleaseCalendar's Tolerance | Depends | See [Note](Note) |
-| Add a MetadataTagetRegion | Depends | See [Note](Note) |
-| Remove a MetadataTargetRegion | Depends | See [Note](Note) |
-| Modify a MetadataTargetRegion's include attribute | Depends | See [Note](Note) |
-| Modify a MetadataTargetRegion's validFrom | Depends | See [Note](Note) |
-| Modify a MetadataTargetRegion's validTo | Depends | See [Note](Note) |
-| Add a Component to a MetadataTargetRegion | Depends | See [Note](Note) |
-| Remove a Component from a MetadataTargetRegion | Depends | See [Note](Note) |
-| Modify a Component's id | Depends | See [Note](Note) |
-| Modify a Component's include attribute | Depends | See [Note](Note) |
-| Modify a Component's removePrefix attribute | Depends | See [Note](Note) |
-| Modify a Component's Value's cascadeValues attribute | Depends | See [Note](Note) |
-| Modify a Component's Value's xml:lang attribute | Depends | See [Note](Note) |
-| Modify a Component's Value's validFrom | Depends | See [Note](Note) |
-| Modify a Component's Value's validTo | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's BeforePeriod | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's AfterPeriod | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's StartPeriod | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's EndPeriod | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's validFrom | Depends | See [Note](Note) |
-| Modify a Component's TimeRange's validTo | Depends | See [Note](Note) |
-| Switch a Component's TimeRange from using BeforePeriod or AfterPeriod to StartPeriod and EndPeriod | Depends | See [Note](Note) |
-| Switch a Component's TimeRange from using StartPeriod and EndPeriod to BeforePeriod or AfterPeriod | Depends | See [Note](Note) |
-| Switch Component's TimeRange from using BeforePeriod to AfterPeriod | Depends | See [Note](Note) |
-| Switch a Component's TimeRange from using AfterPeriod to BeforePeriod | Depends | See [Note](Note) |
-| Switch a Component from using TimeRange to Value | Depends | See [Note](Note) |
-| Switch a Component from using Value to TimeRange | Depends | See [Note](Note) |
+| Modify a ReleaseCalendar's Periodicity | Depends | See [Note](#note) |
+| Modify a ReleaseCalendar's Offset | Depends | See [Note](#note) |
+| Modify a ReleaseCalendar's Tolerance | Depends | See [Note](#note) |
+| Add a MetadataTagetRegion | Depends | See [Note](#note) |
+| Remove a MetadataTargetRegion | Depends | See [Note](#note) |
+| Modify a MetadataTargetRegion's include attribute | Depends | See [Note](#note) |
+| Modify a MetadataTargetRegion's validFrom | Depends | See [Note](#note) |
+| Modify a MetadataTargetRegion's validTo | Depends | See [Note](#note) |
+| Add a Component to a MetadataTargetRegion | Depends | See [Note](#note) |
+| Remove a Component from a MetadataTargetRegion | Depends | See [Note](#note) |
+| Modify a Component's id | Depends | See [Note](#note) |
+| Modify a Component's include attribute | Depends | See [Note](#note) |
+| Modify a Component's removePrefix attribute | Depends | See [Note](#note) |
+| Modify a Component's Value's cascadeValues attribute | Depends | See [Note](#note) |
+| Modify a Component's Value's xml:lang attribute | Depends | See [Note](#note) |
+| Modify a Component's Value's validFrom | Depends | See [Note](#note) |
+| Modify a Component's Value's validTo | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's BeforePeriod | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's AfterPeriod | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's StartPeriod | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's EndPeriod | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's validFrom | Depends | See [Note](#note) |
+| Modify a Component's TimeRange's validTo | Depends | See [Note](#note) |
+| Switch a Component's TimeRange from using BeforePeriod or AfterPeriod to StartPeriod and EndPeriod | Depends | See [Note](#note) |
+| Switch a Component's TimeRange from using StartPeriod and EndPeriod to BeforePeriod or AfterPeriod | Depends | See [Note](#note) |
+| Switch Component's TimeRange from using BeforePeriod to AfterPeriod | Depends | See [Note](#note) |
+| Switch a Component's TimeRange from using AfterPeriod to BeforePeriod | Depends | See [Note](#note) |
+| Switch a Component from using TimeRange to Value | Depends | See [Note](#note) |
+| Switch a Component from using Value to TimeRange | Depends | See [Note](#note) |
 
 ### Note
 

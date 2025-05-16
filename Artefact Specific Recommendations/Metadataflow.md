@@ -6,7 +6,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:--------------:|---------|
-| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Change the Structure reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Add a Target | Patch | |
 | Remove a Target | Depends | If the set of all allowed targets doesn't change then this would be a patch. If this action results in the removal of an item from the set of possible targets, then the change would be a major change. |
 | Change a Target's value | Depends | If none of the previously allowed targets is removed from the new set of targets this would be a patch. If this action results in the removal of an item from the set of possible targets, then the change would be a major change. |

@@ -18,7 +18,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Change a GeoFeatureSetCode's Value | Patch | |
 | Add a CodelistExtension | Minor | Adding a meaningful CodelistExtension will add GeoFeatureSetCodes to the GeographicCodelist resulting in a minor change. |
 | Remove a CodelistExtension | Major | Removing a meaningful CodelistExtension will remove GeoFeatureSetCodes from the GeographicCodelist resulting in a major change. |
-| Change a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Change a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Change a CodelistExtension's prefix | Major | Changing the prefix removes all the GeoFeatureSetCodes with the old prefix and adds new GeoFeatureSetCodes with the new prefix. |
 | Change a CodelistExtension's inclusive/exclusive Code selection | Depends | If the set of GeoFeatureSetCodes extending the GeographicCodelist doesn't change then this would be a patch. If the original set of GeoFeatureSetCodes is a proper subset of the new set of GeoFeatureSetCodes extending the GeographicCodelist then this would be a minor change. If GeoFeatureSetCodes are removed from the set of codes extending the GeographicCodelist then this would be a major change. |
 

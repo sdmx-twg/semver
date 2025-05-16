@@ -17,7 +17,7 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Modify a Code's Description | Patch | |
 | Add a CodelistExtension | Minor | Adding a meaningful CodelistExtension will add codes to the Codelist resulting in a minor change. |
 | Remove a CodelistExtension | Major | Removing a meaningful CodelistExtension will remove codes from the Codelist resulting in a major change. |
-| Modify a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Modify a CodelistExtension's prefix | Major | Changing the prefix removes all the codes with the old prefix and adds new codes with the new prefix. |
 | Modify a CodelistExtension's inclusive/exclusive Code selection | Depends | If the set of codes extending the Codelist doesn't change then this would be a patch. If the original set of codes is a proper subset of the new set of codes extending the Codelist then this would be a minor change. If codes are removed from the set of codes extending the Codelist then this would be a major change. |
 

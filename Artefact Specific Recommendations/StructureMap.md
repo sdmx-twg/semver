@@ -6,12 +6,12 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 
 | Action | Minimum Version Change | Comments|
 |--------|:----------------------:|---------|
-| Modify the Source | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
-| Modify the Target | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify the Source | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
+| Modify the Target | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | EpochMap-related actions | Minor | Changes can impact the output data. See [EpochMap-related actions](#epochmap-related-actions) for listing of all actions. |
 | DatePatternMap-related actions | Minor | Changes can impact the output data. See [DatePatternMap-related actions](#datepatternmap-related-actions) for listing of all actions. |
 | FrequencyFormatMapping-related actions | Minor | Changes can impact the output data. See [FrequencyFormatMapping-related actions](#frequencyformatmapping-related-actions) for listing of all actions. |
-| Modify a ComponentMap's RepresentationMap reference | Depends | See [Changing an artefact reference](../General%20Recommendations/Changing%20an%20artefact%20reference.md#changing-an-artefact-reference) for details. |
+| Modify a ComponentMap's RepresentationMap reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Other ComponentMap-related actions | Minor | Changes can impact the output data. See [Other ComponentMap-related actions](#other-componentmap-related-actions) for listing of all actions. |
 | FixedValueMap-related actions | Minor | Changes can impact the output data. See [FixedValueMap-related actions](#fixedvaluemap-related-actions) for listing of all actions.  |
 
