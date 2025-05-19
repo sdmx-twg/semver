@@ -1,6 +1,6 @@
 # CategoryScheme
 
-CategorySchemes work closely with [Categorisations](./Categorisation.md).
+CategorySchemes work closely with [Categorisations](./Artefacts%20with%20Fixed%20Versions/Categorisation.md).
 
 ## Actions
 

@@ -16,6 +16,7 @@ This document is broken down into the following sections:
 ## Changes since SDMX 3.0 guidance
 
 The following sections have been update based on changes to the SDMX standard
+
 * [Categorisation](./Artefact%20Specific%20Recommendations/Artefacts%20with%20Fixed%20Versions/Categorisation.md)
 * [DataConstraint](./Artefact%20Specific%20Recommendations/DataConstraint.md)
 * [Dataflow](./Artefact%20Specific%20Recommendations/Dataflow.md)

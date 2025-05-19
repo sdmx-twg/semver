@@ -1,10 +1,10 @@
 # Categorisation
 
-Categorisations work closely with [CategorySchemes](./CategoryScheme.md). In a categorisation the source is the artifact which is being categorised and the target is the CategoryScheme this categorisation is related to.
+Categorisations work closely with [CategorySchemes](../ConceptScheme.md). In a categorisation the source is the artifact which is being categorised and the target is the CategoryScheme this categorisation is related to.
 
 ## Actions
 
-In SDMX 3.1 a Categorization’s version is fixed to 1.0, so any action taken does not impact version number.
+In SDMX 3.1 a Categorisation’s version is fixed to 1.0, so any action taken does not impact version number.
 
 ## Wildcarding Considerations
 
@@ -21,5 +21,5 @@ Categorisations can reference other versionable artefacts in their Source and Ta
 
 | Level |    | Considerations|
 |-------|:--:|---------------|
-| Minor | ⚠️ | A minor wildcard reference will apply to all versions of the categorization matching that wildcarding. |  
-| Major | 🟥 | It is not recommended to allow major wildcarding to a target as the targeted categorization may no longer exist in the CategoryScheme. |
+| Minor | ⚠️ | A minor wildcard reference will apply to all versions of the Categorisation matching that wildcarding. |  
+| Major | 🟥 | It is not recommended to allow major wildcarding to a target as the targeted Categorisation may no longer exist in the CategoryScheme. |
