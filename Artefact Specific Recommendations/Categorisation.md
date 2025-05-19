@@ -26,5 +26,5 @@ Categorisations can reference other versionable artefacts in their Source and Ta
 
 | Level |    | Considerations|
 |-------|:--:|---------------|
-| Minor | ⚠️ | A minor wildcard reference will apply to all versions of the categorization matching that wildcarding. |  
-| Major | 🟥 | It is not recommended to allow major wildcarding to a target as the targeted categorization may no longer exist in the CategoryScheme.  |
+| Minor | ⚠️ | A minor wildcard reference will apply to all versions of the Categorisation matching that wildcarding. |  
+| Major | 🟥 | It is not recommended to allow major wildcarding to a target as the targeted Categorisation may no longer exist in the CategoryScheme.  |
