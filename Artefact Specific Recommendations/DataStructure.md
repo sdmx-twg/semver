@@ -63,8 +63,9 @@ Including both Dimensions and TimeDimension
 |--------|:--------------:|---------|
 | Add a MetdataStructrue reference | Patch | The action itself doesn't change that structure but subsequent use of MetadataAttributes will result in at least a Minor change. |
 | Modify a MetdataStructrue reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
-| Remove aMetdataStructrue reference where MetadataAttributes are used | Major | Any MetadataAttributes would also be removed when removing the MetadataStructure.  |
-| Remove a MetdataStructrue reference where MetadataAttributes are not used | Patch | There is no impact to data or metadata in a dependent dataset.  |
+| Remove a MetdataStructrue reference where MetadataAttributes are used | Major | Any MetadataAttributes would also be removed when removing the MetadataStructure.  |
+| Remove a MetdataStructrue reference where MetadataAttributes are not used | Patch | There is no impact to data or metadata in a dependent dataset. |
+| Change the order of MetadataStructure references | Major | The order of the MetadataStructure references determines which MetadataAttribute takes precedence when conflicts occur. Changing the order can therefore change which MetadataAttribute is used, including where wildcarded references introduce a conflict in a later version. |
 | Add an optional MetadataAttribute | Minor | Existing datasets would not be able to add metadata for this MetadataAttribute. Note a MetadataAttribute being optional is defined in the related MetdataStructrue. |
 | Add mandatory MetadataAttribute | Major | Existing datasets would not have metadata for this MetadataAttribute. Note a MetadataAttribute being mandatory is defined in the related MetdataStructrue. |
 | RemoveMetadataAttribute | Major | This change would remove metadata from existing datasets. |
@@ -122,7 +123,7 @@ A DataStructure can reference other versionable artefacts in many places:
 
 | Level |    | Considerations|
 |-------|:--:|---------------|
-| Minor | 🟢 | There are no concerns with having a minor wildcard reference within the MetdataStructrue reference. |  
+| Minor | ⚠️ | A minor change to a referenced MetadataStructure could introduce a conflict for a MetadataAttribute used by the DataStructure. Where a conflict occurs, the order of the MetadataStructure references determines which MetadataAttribute is used. |  
 | Major | 🟥 | It is not recommended to allow major wildcarding within the MetdataStructrue reference. A MetadataAttribute being used by the DataStructure may have been removed from the MetdataStructrue making the DataStructure no longer valid. |
 
 ### ConceptSchemes references in ConceptIdentities
