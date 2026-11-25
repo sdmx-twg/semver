@@ -10,18 +10,18 @@ In SDMX maintainable artefacts are artefacts which have an agency, ID, and versi
 | Change URN | N.A. | The URN is formed from the Namespace, Agency, ID, and Version and should not change on its own. |
 | Change Name | Patch | Changing the Name includes add or removing names in different languages as well as changing an existing name. |
 | Change Description | Patch | Changing the Description includes add or removing Descriptions in different languages as well as changing an existing Description. |
-| Change URI | Patch | Changing the URI includes add or removing the URI as well as changing its value. |
+| Change URI | Patch | Changing the URI includes add or removing the URI as well as changing its value. Note URI is deprecated. |
 | Change Link | Patch | Changing the Link includes add or removing the Link as well as changing any of its attributes. |
 | Change validFrom | Patch | Changing the validFrom includes add or removing the validFrom attribute as well as changing it to a different value. |
 | Change validTo | Patch | Changing the validTo includes add or removing the validTo attribute as well as changing it to a different value. |
-| Any annotation change | No Impact | See [below](#annotations) |
-| Change isExternalReference | N.A. | This is a flag to say if the artefact is maintained within the system or not, changing it cannot impact the version.   |
-| Change serviceURL | N.A. | This is part of a reference to an artefact you are not maintaining, so you can't modify the version by changing this value. |
+| Any annotation change | Patch | See [below](#annotations) |
+| Change isExternalReference | N.A. | This is a flag to say if the artefact is maintained within the system or not, changing it cannot impact the version. |
+| Change serviceURL | N.A. | This is part of a reference to an artefact you are not maintaining, so you can't modify the version by changing this value. Note serviceURL is deprecated. |
 | Change structureURL | N.A. | This is part of a reference to an artefact you are not maintaining, so you can't modify the version by changing this value. |
 
 ## Annotations
 
-An annotation is just a construct that contains user or organisation-specific metadata. While an annotation may have an impact on a given system’s processing of a structure, they are in general not standardized across organisations. [The Guidelines on the use of SDMX Annotations](https://sdmx.org/wp-content/uploads/Guidelines-on-the-use-of-SDMX-Annotations-2.0.docx) introduced some standardisations with an aim to improve interoperability of Annotations between SDMX-compliant organisations. Even in the case where an annotation is standardised, frequent changing of annotations values makes tying version changes of artifacts to them undesirable. While the maintainer of an artefact may decide to increase the version number due to an annotation change, the recommendation is that such an increase is voluntary.
+An annotation is just a construct that contains user or organisation-specific metadata. While an annotation may have an impact on a given system’s processing of a structure, they are in general not standardized across organisations. [The Guidelines on the use of SDMX Annotations](https://sdmx.org/wp-content/uploads/Guidelines-on-the-use-of-SDMX-Annotations-2.0.docx) introduced some standardisations with an aim to improve interoperability of Annotations between SDMX-compliant organisations.
 
 ## Changing an artefact reference
 

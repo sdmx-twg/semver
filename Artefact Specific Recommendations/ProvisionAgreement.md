@@ -22,4 +22,7 @@ ProvisionAgreements can reference other versionable artefacts with their Dataflo
 
 ### DataProvider references
 
-The DataProviderScheme is fixed to version 1.0 so wildcarding cannot be applied to this reference.
+| Level |    | Considerations|
+|-------|:--:|---------------|
+| Minor | 🟢 | There are no concerns with having a minor wildcard reference to a DataProviderScheme. |  
+| Major | 🟥 | It is not recommended to allow major wildcarding of a reference to a DataProviderScheme. A ProvisionAgreement may no longer valid as the DataProvider may have been removed from the DataProviderScheme. |

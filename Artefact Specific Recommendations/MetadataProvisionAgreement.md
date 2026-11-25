@@ -25,7 +25,10 @@ MetadataProvisionAgreement can reference other versionable artefacts with their 
 
 ### MetadataProvider references
 
-The MetadataProviderScheme is fixed to version 1.0 so wildcarding cannot be applied to this reference.
+| Level |    | Considerations|
+|-------|:--:|---------------|
+| Minor | 🟢 | There are no concerns with having a minor wildcard reference to a MetadataProviderScheme. |  
+| Major | 🟥 | It is not recommended to allow major wildcarding of a reference to a MetadataProviderScheme. A MetadataProvisionAgreement may no longer valid as the MetadataProvider may have been removed from the MetadataProviderScheme. |
 
 ### Target references
 
