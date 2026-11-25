@@ -15,11 +15,18 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Add a Description to a Code | Patch | |
 | Remove a Description from a Code | Patch | |
 | Modify a Code's Description | Patch | |
+| Add a validFrom to a Code | Major | Adding a validFrom makes the validity period more restrictive. |
+| Remove a validFrom from a Code | Minor | Removing a validFrom makes the validity period less restrictive. |
+| Modify a Code's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. |
+| Add a validTo to a Code | Major | Adding a validTo makes the validity period more restrictive. |
+| Remove a validTo from a Code | Minor | Removing a validTo makes the validity period less restrictive. |
+| Modify a Code's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. |
 | Add a CodelistExtension | Minor | Adding a meaningful CodelistExtension will add codes to the Codelist resulting in a minor change. |
 | Remove a CodelistExtension | Major | Removing a meaningful CodelistExtension will remove codes from the Codelist resulting in a major change. |
 | Modify a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
 | Modify a CodelistExtension's prefix | Major | Changing the prefix removes all the codes with the old prefix and adds new codes with the new prefix. |
 | Modify a CodelistExtension's inclusive/exclusive Code selection | Depends | If the set of codes extending the Codelist doesn't change then this would be a patch. If the original set of codes is a proper subset of the new set of codes extending the Codelist then this would be a minor change. If codes are removed from the set of codes extending the Codelist then this would be a major change. |
+
 
 ## Wildcarding Considerations
 

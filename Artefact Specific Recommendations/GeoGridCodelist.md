@@ -17,6 +17,12 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Remove a Description from a GeoGridCode | Patch | |
 | Change a GeoGridCode's Description | Patch | |
 | Change a GeoGridCode's GeoCell | Patch | |
+| Add a validFrom to a GeoGridCode | Major | Adding a validFrom makes the validity period more restrictive. |
+| Remove a validFrom from a GeoGridCode | Minor | Removing a validFrom makes the validity period less restrictive. |
+| Modify a GeoGridCode's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. |
+| Add a validTo to a GeoGridCode | Major | Adding a validTo makes the validity period more restrictive. |
+| Remove a validTo from a GeoGridCode | Minor | Removing a validTo makes the validity period less restrictive. |
+| Modify a GeoGridCode's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. |
 
 ## Wildcarding Considerations
 

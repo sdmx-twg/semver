@@ -15,6 +15,12 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Add a Description to a ValueItem | Patch | |
 | Remove a Description from a ValueItem | Patch | |
 | Modify a ValueItem's Description | Patch | |
+| Add a validFrom to a ValueItem | Major | Adding a validFrom makes the validity period more restrictive. |
+| Remove a validFrom from a ValueItem | Minor | Removing a validFrom makes the validity period less restrictive. |
+| Modify a ValueItem's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. |
+| Add a validTo to a ValueItem | Major | Adding a validTo makes the validity period more restrictive. |
+| Remove a validTo from a ValueItem | Minor | Removing a validTo makes the validity period less restrictive. |
+| Modify a ValueItem's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. |
 
 ## Wildcarding Considerations
 

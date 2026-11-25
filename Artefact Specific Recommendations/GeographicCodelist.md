@@ -13,9 +13,15 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Remove a Name from a GeoFeatureSetCode | Patch | |
 | Change a GeoFeatureSetCode's Name | Patch | |
 | Add a Description to a GeoFeatureSetCode | Patch | |
-| Remove a Description from a GeoFeatureSetCode  | Patch | |
+| Remove a Description from a GeoFeatureSetCode | Patch | |
 | Change a GeoFeatureSetCode's Description | Patch | |
 | Change a GeoFeatureSetCode's Value | Patch | |
+| Add a validFrom to a GeoFeatureSetCode | Major | Adding a validFrom makes the validity period more restrictive. |
+| Remove a validFrom from a GeoFeatureSetCode | Minor | Removing a validFrom makes the validity period less restrictive. |
+| Modify a GeoFeatureSetCode's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. |
+| Add a validTo to a GeoFeatureSetCode | Major | Adding a validTo makes the validity period more restrictive. |
+| Remove a validTo from a GeoFeatureSetCode | Minor | Removing a validTo makes the validity period less restrictive. |
+| Modify a GeoFeatureSetCode's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. |
 | Add a CodelistExtension | Minor | Adding a meaningful CodelistExtension will add GeoFeatureSetCodes to the GeographicCodelist resulting in a minor change. |
 | Remove a CodelistExtension | Major | Removing a meaningful CodelistExtension will remove GeoFeatureSetCodes from the GeographicCodelist resulting in a major change. |
 | Change a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |
