@@ -18,10 +18,10 @@ See [General Recommendations for Maintainable Artefacts](../General%20Recommenda
 | Change a GeoFeatureSetCode's Value | Patch | |
 | Add a validFrom to a GeoFeatureSetCode | Major | Adding a validFrom makes the validity period more restrictive. |
 | Remove a validFrom from a GeoFeatureSetCode | Minor | Removing a validFrom makes the validity period less restrictive. |
-| Modify a GeoFeatureSetCode's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. |
+| Modify a GeoFeatureSetCode's validFrom | Depends | If the validFrom date is moved forward in time, then the change is more restrictive and so this is a major change. If the date is moved backwards in time, then the change is less restrictive and so this is a minor change. If only the representation is changed, without changing the effective validity period, then this is a patch change. |
 | Add a validTo to a GeoFeatureSetCode | Major | Adding a validTo makes the validity period more restrictive. |
 | Remove a validTo from a GeoFeatureSetCode | Minor | Removing a validTo makes the validity period less restrictive. |
-| Modify a GeoFeatureSetCode's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. |
+| Modify a GeoFeatureSetCode's validTo | Depends | If the validTo date is moved backwards in time, then the change is more restrictive and so this is a major change. If the  date is moved forward in time, then the change is less restrictive and so this is a minor change. If only the representation is changed, without changing the effective validity period, then this is a patch change. |
 | Add a CodelistExtension | Minor | Adding a meaningful CodelistExtension will add GeoFeatureSetCodes to the GeographicCodelist resulting in a minor change. |
 | Remove a CodelistExtension | Major | Removing a meaningful CodelistExtension will remove GeoFeatureSetCodes from the GeographicCodelist resulting in a major change. |
 | Change a CodelistExtension's Codelist Reference | Depends | See [Changing an artefact reference](../General%20Recommendations%20for%20Maintainable%20Artefacts.md#changing-an-artefact-reference) for details. |

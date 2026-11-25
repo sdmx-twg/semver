@@ -12,8 +12,8 @@ In SDMX maintainable artefacts are artefacts which have an agency, ID, and versi
 | Change Description | Patch | Changing the Description includes add or removing Descriptions in different languages as well as changing an existing Description. |
 | Change URI | Patch | Changing the URI includes add or removing the URI as well as changing its value. Note URI is deprecated. |
 | Change Link | Patch | Changing the Link includes add or removing the Link as well as changing any of its attributes. |
-| Change validFrom | Patch | Changing the validFrom includes add or removing the validFrom attribute as well as changing it to a different value. |
-| Change validTo | Patch | Changing the validTo includes add or removing the validTo attribute as well as changing it to a different value. |
+| Change validFrom | Patch | Changing the validFrom includes add or removing the validFrom attribute as well as changing it to a different value. For semantically versioned artefacts, validFrom may only be used to indicate the publication date-time. |
+| Change validTo | Patch | Changing the validTo includes add or removing the validTo attribute as well as changing it to a different value. validTo should not be used for semantically versioned artefacts. |
 | Any annotation change | Patch | See [below](#annotations) |
 | Change isExternalReference | N.A. | This is a flag to say if the artefact is maintained within the system or not, changing it cannot impact the version. |
 | Change serviceURL | N.A. | This is part of a reference to an artefact you are not maintaining, so you can't modify the version by changing this value. Note serviceURL is deprecated. |
